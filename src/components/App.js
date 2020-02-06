@@ -1,9 +1,13 @@
 import React from 'react';
-import { Recordings } from '../containers/Recordings';
+import ArtistContainer from '../containers/ArtistContainer';
+import Header from './common/Header';
 
-export const App = () => {
+export default function App() {
   return (
     <>
-      <Recordings />
-    </>);
-};
+      <Header />
+      <ArtistContainer />
+    </>
+  );
+}
+
