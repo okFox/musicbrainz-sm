@@ -1,5 +1,6 @@
 .Albums {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 90vw;
 
@@ -8,9 +9,11 @@
     color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 30px;
+    max-width: 250px;
   }
 
   img {
     max-height: 250px;
+    max-width: 230px;
   }
 }
