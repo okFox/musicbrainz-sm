@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Form.ss'
+import styles from './Form.css';
 
 const ArtistInput = ({ artistName, setArtist, onSubmit }) => (
   <form className={styles.form}>
@@ -11,8 +11,8 @@ const ArtistInput = ({ artistName, setArtist, onSubmit }) => (
 
 ArtistInput.propTypes = {
   artistName: PropTypes.string,
-  setArtist: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  setArtist: PropTypes.func,
+  onSubmit: PropTypes.func
 };
 
 export default ArtistInput;

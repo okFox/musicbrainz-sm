@@ -3,8 +3,8 @@ import ArtistItem from './ArtistItem.js';
 import styles from './ArtistItem.css';
 
 const artistNames = [
-  { id: '1', name: 'Prince'},
-  { id: '2', name: 'Bon Jovi'}
+  { artistId: '1', artistName: 'Prince' },
+  { artistId: '2', artistName: 'Bon Jovi' }
 ];
 
 const ArtistList = () => {
@@ -20,9 +20,9 @@ const ArtistList = () => {
         {artistItemElements}
       </ul>
     </section>
-  )
+  );
 
 
-}
+};
 
 export default ArtistList;

@@ -5,9 +5,8 @@ import styles from './ArtistItem.css';
 
 const ArtistItem = ({ artistName, artistId }) => (
   <li className={styles.artistItem}>
-    <Link to={`/artist/${artistId}`}>
-      <h1>{artistName}</h1>
-    </Link>
+    <h1>{artistName}</h1>
+    <p>{artistId}</p>
   </li>
 );
 
