@@ -1,0 +1,16 @@
+.Albums {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+
+  li {
+    list-style: none;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+  }
+
+  img {
+    max-height: 250px;
+  }
+}

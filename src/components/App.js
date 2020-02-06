@@ -1,6 +1,7 @@
 import React from 'react';
+import Albums from '../containers/Albums';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return <Albums />;
 }
   
