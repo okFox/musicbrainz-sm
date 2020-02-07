@@ -31,7 +31,7 @@ const useArtists = () => {
       .finally(() => setLoading(false));
   };
 
-  return { artistArray, artistName, setArtist, handleChange, handleSubmit };
+  return { artistArray, artistName, setArtist, handleChange, handleSubmit, loading };
 };
 
 export default useArtists;
