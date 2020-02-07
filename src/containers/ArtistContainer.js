@@ -6,6 +6,7 @@ import styles from './ArtistContainer.css';
 
 const ArtistContainer = () => {
 
+  
 
 
   return (
