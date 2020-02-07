@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { RecordingsList } from '../components/recordings/RecordingsList';
+import RecordingsList from '../components/recordings/RecordingsList';
 import getRecordings from '../components/services/getRecordings';
 
 const Recordings = ({ match }) => {

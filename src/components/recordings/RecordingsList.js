@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { RecordingsItem } from './RecordingsItem';
+import RecordingsItem from './RecordingsItem';
 
 const RecordingsList = ({ recordingsArray }) => {
   const recordings = recordingsArray.map((recording, i) => (
