@@ -3,9 +3,10 @@ import ArtistList from '../components/artist/ArtistList';
 import ArtistInput from '../components/artist/Form';
 import styles from './ArtistContainer.css';
 import useArtists from '../hooks/artistHook';
+import Paging from '../components/paging/Paging';
 
 const ArtistContainer = () => {
-  const { artistName, handleChange, handleSubmit, artistArray } = useArtists();
+  const { artistName, handleChange, handleSubmit, artistArray, currentPage, handlePreviousClick, handleNextClick } = useArtists();
 
   // const nameNoSpace = artistName.replace(/\s/g, '-');
 
@@ -13,7 +14,7 @@ const ArtistContainer = () => {
     <section className={styles.Container}>
       <ArtistInput artistName={artistName} onChange={handleChange} onSubmit={handleSubmit}/>
       <ArtistList artistArray={artistArray} artistName={artistName} />
-
+      <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
     </section>
   );
 };
