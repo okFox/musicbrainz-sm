@@ -11,7 +11,10 @@ const useArtists = () => {
   useEffect(() => {
     setLoading(true);
     getArtists(nameNoSpace)
-      .then(artistArray => setArtistArray(artistArray))
+      .then(artistArray => {
+        setArtistArray(artistArray);
+        console.log(artistArray);
+      })
       .finally(() => setLoading(false));
   }, []);
 
