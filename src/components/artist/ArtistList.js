@@ -1,18 +1,17 @@
 import React from 'react';
 import ArtistItem from './ArtistItem.js';
 import styles from './ArtistItem.css';
-import useArtists from '../../hooks/artistHook';
+import PropTypes from 'prop-types';
+import useArtists from '../../hooks/artistHook.js';
 
 
 
-const ArtistList = () => {
-  const { artistArray } = useArtists();
-  console.log(artistArray);
+const ArtistList = ({ artistArray }) => {
+
 
   const artistItemElements = artistArray.map(({ artistName, artistId }) => (
-    <ArtistItem key={artistId} artistName={artistName} />
+    <ArtistItem key={artistId} artistId={artistId} artistName={artistName} />
   ));
-
   
   return (
     <section className={styles.artistList}>
@@ -23,6 +22,11 @@ const ArtistList = () => {
   );
 
 
+  
+};
+
+ArtistList.propTypes = {
+  artistArray: PropTypes.array
 };
 
 export default ArtistList;
