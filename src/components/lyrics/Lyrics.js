@@ -2,12 +2,7 @@ import React from 'react';
 import samplelyrics from './samplelyrics.json';
 import ReactJSON from 'react-json-view';
 
-
-
-
-
 function Lyrics({ lyrics }) {
-
 
   return (
     <section>
@@ -15,7 +10,5 @@ function Lyrics({ lyrics }) {
     </section>
   );
 }
-
-
 
 export default Lyrics;

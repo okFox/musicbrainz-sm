@@ -1,5 +1,6 @@
 import React from 'react';
 import { RecordingsItem } from './RecordingsItem';
+import { Recordings } from '../../containers/Recordings';
 
 
 const recordingfetch = {
@@ -30,7 +31,7 @@ const recordingfetch = {
   ]
 };
 
-export const RecordingsList = () => {
+const RecordingsList = () => {
   const recordings = recordingfetch.recordings.map((recording) => (
     <li key={recording.id}><RecordingsItem  title={recording.title} id={recording.id} /></li>
   ));
@@ -47,3 +48,5 @@ export const RecordingsList = () => {
   );
     
 };
+
+export default RecordingsList;

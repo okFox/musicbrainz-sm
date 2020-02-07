@@ -1,10 +1,12 @@
 import React from 'react';
 import { RecordingsList } from '../components/recordings/RecordingsList';
 
-export const Recordings = () => {
+const Recordings = () => {
 
   return (
     <>
       <RecordingsList />
     </>);
 };
+
+export default Recordings;
