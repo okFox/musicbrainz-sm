@@ -1,6 +1,7 @@
 import React from 'react';
 import Albums from '../containers/Albums';
 import ArtistContainer from '../containers/ArtistContainer';
+import Lyrics from './lyrics/Lyrics';
 import Header from './common/Header';
 
 export default function App() {
@@ -8,7 +9,8 @@ export default function App() {
     <>
       <Header />
       <ArtistContainer />
-      <Albums />;
+      <Albums />
+      <Lyrics />
     </>
   );
 }
