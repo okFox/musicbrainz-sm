@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AlbumItem = ({ releaseId, albumName }) => (
+const AlbumItem = ({ albumId, albumTitle }) => (
   <>
-    <img src={`http://coverartarchive.org/release/${releaseId}/front`} />
-    <p>{albumName}</p>
+    <img src={`http://coverartarchive.org/release/${albumId}/front`} />
+    <p>{albumTitle}</p>
   </>
-)
+);
 
-AlbumItem.PropTypes = {
-  releaseId: PropTypes.string.isRequired,
-  albumName: PropTypes.string.isRequired
-}
+AlbumItem.propTypes = {
+  albumId: PropTypes.string.isRequired,
+  albumTitle: PropTypes.string.isRequired
+};
 
 export default AlbumItem;

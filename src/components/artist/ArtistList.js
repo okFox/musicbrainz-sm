@@ -2,6 +2,7 @@ import React from 'react';
 import ArtistItem from './ArtistItem.js';
 import styles from './ArtistItem.css';
 import PropTypes from 'prop-types';
+import useArtists from '../../hooks/artistHook.js';
 
 
 
