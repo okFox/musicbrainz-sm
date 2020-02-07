@@ -13,7 +13,7 @@ export default function App() {
       <Switch>
         <Route exact path='/' component={ArtistContainer} />
         <Route path='/albums/:artistId' component={Albums} />
-        <Route path='/recording/:id' component={Recordings} />
+        <Route path='/recordings/:albumId' component={Recordings} />
         <Route path='/lyrics/:id' component={Lyrics} />
       </Switch>
     </Router>

@@ -8,7 +8,7 @@ const Albums = ({ match }) => {
 
 
   useEffect(() => {
-    console.log('HELLLLLOOOOOOO')
+    console.log('HELLLLLOOOOOOO');
     getAlbums(match.params.artistId)
       .then(receivedAlbumArray => {
         setAlbumArray(receivedAlbumArray);
