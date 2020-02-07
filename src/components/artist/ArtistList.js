@@ -7,11 +7,11 @@ import useArtists from '../../hooks/artistHook';
 
 const ArtistList = () => {
   const { artistArray } = useArtists();
+  console.log(artistArray, "ON LIST PAGE");
 
   const artistItemElements = artistArray.map(({ artistName, artistId }) => (
-    <ArtistItem key={artistId} artistName={artistName} />
+    <ArtistItem key={artistId} artistId={artistId} artistName={artistName} />
   ));
-
   
   return (
     <section className={styles.artistList}>

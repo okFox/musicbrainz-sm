@@ -7,6 +7,8 @@ import useArtists from '../hooks/artistHook';
 const ArtistContainer = () => {
   const { artistName, handleChange, handleSubmit } = useArtists();
 
+  
+
 
   return (
     <section className={styles.Container}>

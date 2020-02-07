@@ -8,14 +8,15 @@ const useArtists = () => {
 
   const nameNoSpace = artistName.replace(/\s/g, '-');
 
-  useEffect(() => {
-    setLoading(true);
-    getArtists(nameNoSpace)
-      .then(artistArray => {
-        setArtistArray(artistArray);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   getArtists(nameNoSpace)
+  //     .then(artistArray => {
+  //       setArtistArray(artistArray)
+  //       console.log(artistArray, 'IN USE EFFET');
+  //     })
+  //     .finally(() => setLoading(false));
+  // }, []);
 
   const handleChange = ({ target }) => {
     setArtist(target.value);
@@ -27,6 +28,7 @@ const useArtists = () => {
     getArtists(nameNoSpace)
       .then(artistArray => {
         setArtistArray(artistArray);
+        console.log(artistArray, "IN OTHER HOOK FUNCTION");
       })
       .finally(() => setLoading(false));
   };
