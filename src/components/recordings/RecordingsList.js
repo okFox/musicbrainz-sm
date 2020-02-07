@@ -32,8 +32,8 @@ const recordingfetch = {
 };
 
 const RecordingsList = () => {
-  const recordings = recordingfetch.recordings.map((recording) => (
-    <li key={recording.id}><RecordingsItem  title={recording.title} id={recording.id} /></li>
+  const recordings = recordingfetch.recordings.map((recording, i) => (
+    <li key={i}><RecordingsItem  title={recording.title} /></li>
   ));
 
   return (
