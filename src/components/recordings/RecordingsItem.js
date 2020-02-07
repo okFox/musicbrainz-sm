@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 // import { RecordingsList } from './RecordingsList';
 
 
-const RecordingsItem = ({ title }) => {
+const RecordingsItem = ({ recordingTitle }) => {
   return (
 
-    <p>{title}</p>
+    <p>{recordingTitle}</p>
 
   );
 };
 RecordingsItem.propTypes = {
-  title: PropTypes.string.isRequired
+  recordingTitle: PropTypes.string.isRequired
 };
 
 export default RecordingsItem;
