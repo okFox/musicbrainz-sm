@@ -5,7 +5,7 @@ import getAlbums from '../components/services/getAlbums';
 
 const Albums = ({ match }) => {
   const [albumArray, setAlbumArray] = useState([]);
-
+  
 
   useEffect(() => {
     console.log('HELLLLLOOOOOOO');
@@ -17,7 +17,7 @@ const Albums = ({ match }) => {
 
   return (
     <>
-      <AlbumList albumArray={albumArray} />
+      <AlbumList albumArray={albumArray} artistId={match.params.artistId} artistName={match.params.artistName} />
     </>
   );
 };
@@ -25,7 +25,8 @@ const Albums = ({ match }) => {
 Albums.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      artistId: PropTypes.string.isRequired
+      artistId: PropTypes.string.isRequired,
+      artistName: PropTypes.string.isRequired
     })
   }).isRequired
 };

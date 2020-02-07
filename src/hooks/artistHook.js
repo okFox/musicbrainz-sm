@@ -7,6 +7,7 @@ const useArtists = () => {
   const [loading, setLoading] = useState(true);
 
   const nameNoSpace = artistName.replace(/\s/g, '-');
+ 
 
   useEffect(() => {
     setLoading(true);
@@ -18,7 +19,7 @@ const useArtists = () => {
   }, []);
 
   const handleChange = ({ target }) => {
-    setArtist(target.value);
+    setArtist(target.value.replace(/\s/g, '-'));
   };
 
   const handleSubmit = (event) => {

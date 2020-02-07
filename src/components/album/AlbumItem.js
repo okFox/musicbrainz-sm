@@ -7,10 +7,10 @@ const replaceImage = (event) => {
 };
 
 
-const AlbumItem = ({ albumId, albumTitle }) => (
+const AlbumItem = ({ albumId, albumTitle, artistName }) => (
   <>
-    <Link to={`/recordings/${albumId}`}>
-      <img src={`http://coverartarchive.org/release/${albumId}/front`} onError={replaceImage}/>
+    <Link to={`/recordings/${albumId}/${artistName}`}>
+      <img src={`http://coverartarchive.org/release/${albumId}/front`} onError={replaceImage} />
       <p>{albumTitle}</p>
     </Link>
   </>
@@ -18,7 +18,8 @@ const AlbumItem = ({ albumId, albumTitle }) => (
 
 AlbumItem.propTypes = {
   albumId: PropTypes.string.isRequired,
-  albumTitle: PropTypes.string.isRequired
+  albumTitle: PropTypes.string.isRequired,
+  artistName: PropTypes.string.isRequired
 };
 
 export default AlbumItem;

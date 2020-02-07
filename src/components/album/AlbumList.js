@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import AlbumItem from './AlbumItem';
 import styles from './AlbumList.css';
 
-const AlbumList = ({ albumArray }) => {
+const AlbumList = ({ albumArray, artistName }) => {
 
   const albumElements = albumArray.map((album, i) => (
     <li key={i}>
-      <AlbumItem albumId={album.albumId} albumTitle={album.albumTitle} />
+      <AlbumItem albumId={album.albumId} albumTitle={album.albumTitle} artistName={artistName} />
     </li>
   ));
 
@@ -19,7 +19,8 @@ const AlbumList = ({ albumArray }) => {
 };
 
 AlbumList.propTypes = {
-  albumArray: PropTypes.array.isRequired
+  albumArray: PropTypes.array.isRequired,
+  artistName: PropTypes.string.isRequired
 }
 
 export default AlbumList;

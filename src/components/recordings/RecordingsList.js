@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RecordingsItem from './RecordingsItem';
 
-const RecordingsList = ({ recordingsArray }) => {
+
+const RecordingsList = ({ recordingsArray, artistName }) => {
   const recordings = recordingsArray.map((recording, i) => (
-    <li key={i}><RecordingsItem  recordingTitle={recording.recordingTitle} /></li>
+
+    <li key={i}><RecordingsItem recordingTitle={recording.recordingTitle} artistName={artistName} /></li>
+
   ));
 
   return (
@@ -15,12 +18,13 @@ const RecordingsList = ({ recordingsArray }) => {
           {recordings}
         </ul>
       </section>
-    </>      
+    </>
   );
 };
 
 RecordingsList.propTypes = {
-  recordingsArray: PropTypes.array.isRequired
+  recordingsArray: PropTypes.array.isRequired,
+  artistName: PropTypes.string.isRequired
 };
 
 export default RecordingsList;

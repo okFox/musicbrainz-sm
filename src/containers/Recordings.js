@@ -13,14 +13,15 @@ const Recordings = ({ match }) => {
 
   return (
     <>
-      <RecordingsList recordingsArray={recordingsArray} />
+      <RecordingsList recordingsArray={recordingsArray} artistName={match.params.artistName} />
     </>);
 };
 
 Recordings.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      albumId: PropTypes.string.isRequired
+      albumId: PropTypes.string.isRequired,
+      artistName: PropTypes.string.isRequired
     })
   }).isRequired
 };
