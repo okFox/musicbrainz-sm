@@ -5,7 +5,7 @@ import styles from './ArtistContainer.css';
 import useArtists from '../hooks/artistHook';
 
 const ArtistContainer = () => {
-  const { artistName, handleChange, handleSubmit } = useArtists();
+  const { artistName, handleChange, handleSubmit, artistArray } = useArtists();
 
   
 
@@ -13,7 +13,7 @@ const ArtistContainer = () => {
   return (
     <section className={styles.Container}>
       <ArtistInput artistName={artistName} onChange={handleChange} onSubmit={handleSubmit}/>
-      <ArtistList />
+      <ArtistList artistArray={artistArray} />
 
     </section>
   );

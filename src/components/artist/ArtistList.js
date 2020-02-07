@@ -1,13 +1,12 @@
 import React from 'react';
 import ArtistItem from './ArtistItem.js';
 import styles from './ArtistItem.css';
-import useArtists from '../../hooks/artistHook';
+import PropTypes from 'prop-types';
 
 
 
-const ArtistList = () => {
-  const { artistArray } = useArtists();
-  console.log(artistArray, "ON LIST PAGE");
+const ArtistList = ({ artistArray }) => {
+
 
   const artistItemElements = artistArray.map(({ artistName, artistId }) => (
     <ArtistItem key={artistId} artistId={artistId} artistName={artistName} />
@@ -22,6 +21,11 @@ const ArtistList = () => {
   );
 
 
+  
+};
+
+ArtistList.propTypes = {
+  artistArray: PropTypes.array
 };
 
 export default ArtistList;
