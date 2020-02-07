@@ -5,9 +5,7 @@ import styles from './ArtistContainer.css';
 import useArtists from '../hooks/artistHook';
 
 const ArtistContainer = () => {
- const { artistName, handleChange, handleSubmit } = useArtists();
-
-
+  const { artistName, handleChange, handleSubmit } = useArtists();
 
 
   return (

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getArtists } from '../components/services/getArtists';
 
 const useArtists = () => {
-  const [artistName, setArtist] = useState('');
+  const [artistName, setArtist] = useState('Prince');
   const [artistArray, setArtistArray] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const useArtists = () => {
       .finally(() => setLoading(false));
   };
 
-  return { artistArray, artistName, setArtist, handleChange, handleSubmit };
+  return { artistArray, artistName, setArtist, handleChange, handleSubmit, loading };
 };
 
 export default useArtists;
