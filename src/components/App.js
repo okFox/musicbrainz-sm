@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom;'
 import Albums from '../containers/Albums';
 import ArtistContainer from '../containers/ArtistContainer';
+import Lyrics from './lyrics/Lyrics';
 import Header from './common/Header';
 import Recordings from '../containers/Recordings';
 
@@ -16,6 +17,6 @@ export default function App() {
         <Route path='/lyrics/:id' component={Lyrics} />
       </Switch>
     </Router>
-  );
+
 }
 
