@@ -5,7 +5,7 @@ import styles from './ArtistItem.css';
 
 const ArtistItem = ({ artistName, artistId }) => (
 
-  <Link to={`/albums/${artistId}`}>
+  <Link to={`/albums/${artistId}/${artistName}`}>
     <li className={styles.artistItem}>
       <h1>{artistName}</h1>
       <p>{artistId}</p>
