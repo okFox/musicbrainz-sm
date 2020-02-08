@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistList component renders ArtistList 1`] = `
+<section
+  className="artistList"
+>
+  <ul>
+    <ArtistItem />
+    <ArtistItem />
+  </ul>
+</section>
+`;

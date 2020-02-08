@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistInput component renders ArtistInput 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="name"
+  />
+  <button>
+    Search!
+  </button>
+</form>
+`;
+
+exports[`Form component renders Form 1`] = `
+<form
+  className="form"
+>
+  <input
+    type="text"
+    value="name"
+  />
+  <button>
+    Search!
+  </button>
+</form>
+`;
