@@ -8,17 +8,8 @@ exports[`AlbumList component renders AlbumList 1`] = `
     key="0"
   >
     <AlbumItem
-      albumId="1"
+      albumId="4"
       albumTitle="title"
-      artistName="name"
-    />
-  </li>
-  <li
-    key="1"
-  >
-    <AlbumItem
-      albumId="2"
-      albumTitle="title2"
       artistName="name"
     />
   </li>
