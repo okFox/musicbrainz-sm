@@ -35,24 +35,28 @@ const useArtists = () => {
   };
 
   const handlePreviousClick = () => {
-    if(currentPage === 1) return;
-    
+    if (currentPage === 1) return;
+
     setCurrentPage(currentPage - 1);
     setOffSet(offset - 25);
     getArtists(nameNoSpace, offset)
       .then(artistArray => {
         setArtistArray(artistArray);
       });
+    window.scrollTo(0, 0);
+
   };
 
   const handleNextClick = () => {
-    
+
     setCurrentPage(currentPage + 1);
     setOffSet(offset + 25);
     getArtists(nameNoSpace, offset)
       .then(artistArray => {
         setArtistArray(artistArray);
       });
+    window.scrollTo(0, 0);
+
 
   };
 

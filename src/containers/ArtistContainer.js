@@ -12,7 +12,8 @@ const ArtistContainer = () => {
 
   return (
     <section className={styles.Container}>
-      <ArtistInput artistName={artistName} onChange={handleChange} onSubmit={handleSubmit}/>
+      <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
+      <ArtistInput artistName={artistName} onChange={handleChange} onSubmit={handleSubmit} />
       <ArtistList artistArray={artistArray} artistName={artistName} />
       <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
     </section>
