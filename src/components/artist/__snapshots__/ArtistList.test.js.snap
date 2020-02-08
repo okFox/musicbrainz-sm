@@ -5,8 +5,14 @@ exports[`ArtistList component renders ArtistList 1`] = `
   className="artistList"
 >
   <ul>
-    <ArtistItem />
-    <ArtistItem />
+    <ArtistItem
+      artistId="1"
+      key="1"
+    />
+    <ArtistItem
+      artistId="2"
+      key="2"
+    />
   </ul>
 </section>
 `;

@@ -15,17 +15,3 @@ exports[`ArtistInput component renders ArtistInput 1`] = `
   </button>
 </form>
 `;
-
-exports[`Form component renders Form 1`] = `
-<form
-  className="form"
->
-  <input
-    type="text"
-    value="name"
-  />
-  <button>
-    Search!
-  </button>
-</form>
-`;
