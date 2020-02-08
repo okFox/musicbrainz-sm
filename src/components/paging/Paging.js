@@ -11,7 +11,6 @@ const Paging = ({ currentPage, handleNextClick, handlePreviousClick }) => (
 
 Paging.propTypes = {
   currentPage: PropTypes.string.isRequired,
-  totalPages: PropTypes.string.isRequired,
   handleNextClick: PropTypes.func.isRequired,
   handlePreviousClick: PropTypes.func.isRequired
 };
