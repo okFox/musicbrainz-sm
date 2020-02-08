@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-// import ReactJSON from 'react-json-view';
 import { getLyrics } from '../services/getLyrics';
 import PropTypes from 'prop-types';
 
