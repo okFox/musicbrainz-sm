@@ -7,8 +7,7 @@ const ArtistItem = ({ artistName, artistId }) => (
 
   <Link to={`/albums/${artistId}/${artistName}`}>
     <li className={styles.artistItem}>
-      <h1>{artistName}</h1>
-      <p>{artistId}</p>
+      <h1>{artistName.replace('-', '')}</h1>
     </li>
   </Link>
 );

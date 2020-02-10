@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Paging.css';
 
 const Paging = ({ currentPage, handleNextClick, handlePreviousClick }) => (
   <>

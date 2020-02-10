@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { getLyrics } from '../services/getLyrics';
 import PropTypes from 'prop-types';
+import './Lyrics.css';
 
 function Lyrics({ match }) {
   const [lyrics, setLyrics] = useState('');
@@ -13,7 +14,9 @@ function Lyrics({ match }) {
 
   return (
     <section>
-      <p>{lyrics}</p>  
+      <h1>{match.params.recordingTitle}</h1>
+      <h3>by {match.params.artistName}</h3>
+      <pre>{lyrics}</pre>  
     </section>
   );
 }

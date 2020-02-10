@@ -1,8 +1,11 @@
 import React from 'react';
+import './Header.css';
 
 
 const Header = () => (
-  <h1>what was that one song??</h1>
+  <header>
+    <h1>what was that one song??</h1>
+  </header>
 );
 
 export default Header;

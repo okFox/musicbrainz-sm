@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RecordingsItem from './RecordingsItem';
+import './RecordingsList.css';
 
 
 const RecordingsList = ({ recordingsArray, artistName }) => {

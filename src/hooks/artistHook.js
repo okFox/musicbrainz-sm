@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getArtists } from '../components/services/getArtists';
-import getAlbums from '../components/services/getAlbums';
+
 
 const useArtists = () => {
   const [artistName, setArtist] = useState('');
@@ -35,7 +35,7 @@ const useArtists = () => {
   };
 
   const handlePreviousClick = () => {
-    if (currentPage === 1) return;
+    if(currentPage === 1) return;
 
     setCurrentPage(currentPage - 1);
     setOffSet(offset - 25);
