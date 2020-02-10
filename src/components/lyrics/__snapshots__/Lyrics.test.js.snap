@@ -4,8 +4,7 @@ exports[`Lyrics component renders Lyrics 1`] = `
 <section>
   <h1 />
   <h3>
-    \`by - 
-    \`
+    by 
   </h3>
   <pre />
 </section>
