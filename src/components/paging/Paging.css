@@ -1,0 +1,14 @@
+button {
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-size: larger;
+    color: white;
+    background-color: gray;
+    margin-bottom: 25px;
+}
+span {
+    font-size: larger;
+    font-family: 'Acme', sans-serif;
+    padding: 10px;
+}

@@ -1,0 +1,26 @@
+form {
+    font-family: 'Acme', sans-serif;
+    input[type=text] {
+    font-family: 'Acme', sans-serif;
+    font-size: larger;
+    height: 30px;
+    width: 30%
+}
+
+input {
+    border-radius: 5px;
+}
+button {
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-size: larger;
+    color: white;
+    background-color: gray;
+}
+}
+span {
+    font-size: larger;
+    font-family: 'Acme', sans-serif;
+    padding: 10px;
+}
