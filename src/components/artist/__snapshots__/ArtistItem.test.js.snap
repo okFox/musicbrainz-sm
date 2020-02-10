@@ -10,9 +10,6 @@ exports[`ArtistItem component renders ArtistItem 1`] = `
     <h1>
       name
     </h1>
-    <p>
-      1
-    </p>
   </li>
 </Link>
 `;

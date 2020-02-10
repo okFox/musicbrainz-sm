@@ -6,17 +6,21 @@ import './Lyrics.css';
 
 function Lyrics({ match }) {
   const [lyrics, setLyrics] = useState('');
+  const [lyricSong, setLyricSong] = useState('');
+  const [lyricPerformer, setLyricPerformer] = useState('');
 
   useEffect(() => {
     getLyrics(match.params.artistName, match.params.recordingTitle)
-      .then(receivedLyrics => setLyrics(receivedLyrics));
+      .then(receivedLyrics => setLyrics(receivedLyrics))
+      .then(setLyricPerformer(match.params.artistName))
+      .then(setLyricSong(match.params.recordingTitle));
   });
 
   return (
     <section>
-      <h1>{match.params.recordingTitle}</h1>
-      <h3>by {match.params.artistName}</h3>
-      <pre>{lyrics}</pre>  
+      <h1>{lyricSong}</h1>
+      <h3>`by - {lyricPerformer}`</h3>
+      <pre>{lyrics}</pre> 
     </section>
   );
 }

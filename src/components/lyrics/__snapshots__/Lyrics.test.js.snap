@@ -2,6 +2,11 @@
 
 exports[`Lyrics component renders Lyrics 1`] = `
 <section>
-  <p />
+  <h1 />
+  <h3>
+    \`by - 
+    \`
+  </h3>
+  <pre />
 </section>
 `;
