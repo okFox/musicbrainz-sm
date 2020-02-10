@@ -19,7 +19,7 @@ function Lyrics({ match }) {
   return (
     <section>
       <h1>{lyricSong}</h1>
-      <h3>`by - {lyricPerformer}`</h3>
+      <h3>by {lyricPerformer}</h3>
       <pre>{lyrics}</pre> 
     </section>
   );
